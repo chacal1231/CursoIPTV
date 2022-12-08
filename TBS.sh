@@ -3,13 +3,11 @@ if [ "$EUID" -ne 0 ]
   then echo "¡Por favor corre en root!"
   exit
 fi
-echo '
-███╗   ███╗ █████╗  ██████╗████████╗███████╗██╗      ██████╗ ██████╗ 
-████╗ ████║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║     ██╔════╝██╔═══██╗
-██╔████╔██║███████║██║        ██║   █████╗  ██║     ██║     ██║   ██║
-██║╚██╔╝██║██╔══██║██║        ██║   ██╔══╝  ██║     ██║     ██║   ██║
-██║ ╚═╝ ██║██║  ██║╚██████╗   ██║   ███████╗███████╗╚██████╗╚██████╔╝
-╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚══════╝╚══════╝ ╚═════╝ ╚═════╝' 
+echo "███╗   ███╗ █████╗  ██████╗████████╗███████╗██╗      ██████╗ ██████╗" && echo "████╗ ████║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║     ██╔════╝██╔═══██╗" && echo "██╔████╔██║███████║██║        ██║   █████╗  ██║     ██║     ██║   ██║" && echo "██║╚██╔╝██║██╔══██║██║        ██║   ██╔══╝  ██║     ██║     ██║   ██║" && echo "██║ ╚═╝ ██║██║  ██║╚██████╗   ██║   ███████╗███████╗╚██████╗╚██████╔╝" && echo "╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚══════╝╚══════╝ ╚═════╝ ╚═════╝"
+echo '\033[1;31m¡Compartir el conocimiento es una accion de seres inteligentes!\033[0m'
+sleep 10
+echo 'Empezamos...'
+sleep 1
 if [ -n "`which apt-get`" ]; then apt-get -y install build-essential patchutils\
  libproc-processtable-perl linux-headers-$(uname -r) git;
 systemctl disable apt-daily.service
@@ -32,4 +30,3 @@ make -j4
 make install
 wget https://master.dl.sourceforge.net/project/my-file/dvb-firmwares.tar.bz2
 tar jxvf dvb-firmwares.tar.bz2 -C /lib/firmware/
-echo '¡Terminado, recuerda instalar las TBS y cambiar el modo!'
