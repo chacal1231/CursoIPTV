@@ -4,7 +4,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 echo "__  __          _____ _______ ______ _      _____ ____" && echo "|  \/  |   /\   / ____|__   __|  ____| |    / ____/ __ \ " &&echo "| \  / |  /  \ | |       | |  | |__  | |   | |   | |  | |" && echo "| |\/| | / /\ \| |       | |  |  __| | |   | |   | |  | |" && echo "| |  | |/ ____ \ |____   | |  | |____| |___| |___| |__| |" && echo "|_|  |_/_/    \_\_____|  |_|  |______|______\_____\____/"
-echo "\033[1;31m¡Compartir el conocimiento es una accion de seres inteligentes!\033[0m"
+echo "Compartir el conocimiento es una accion de seres inteligentes!"
 sleep 5
 echo "Empezamos en"
 sleep 1
