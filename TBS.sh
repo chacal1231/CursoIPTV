@@ -30,3 +30,4 @@ make -j4
 make install
 wget https://master.dl.sourceforge.net/project/my-file/dvb-firmwares.tar.bz2
 tar jxvf dvb-firmwares.tar.bz2 -C /lib/firmware/
+echo '¡Terminado, recuerda instalar las TBS y cambiar el modo!'
