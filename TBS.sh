@@ -4,9 +4,9 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 echo "███╗   ███╗ █████╗  ██████╗████████╗███████╗██╗      ██████╗ ██████╗" && echo "████╗ ████║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██║     ██╔════╝██╔═══██╗" && echo "██╔████╔██║███████║██║        ██║   █████╗  ██║     ██║     ██║   ██║" && echo "██║╚██╔╝██║██╔══██║██║        ██║   ██╔══╝  ██║     ██║     ██║   ██║" && echo "██║ ╚═╝ ██║██║  ██║╚██████╗   ██║   ███████╗███████╗╚██████╗╚██████╔╝" && echo "╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚══════╝╚══════╝ ╚═════╝ ╚═════╝"
-echo '\033[1;31m¡Compartir el conocimiento es una accion de seres inteligentes!\033[0m'
-sleep 10
-echo 'Empezamos...'
+echo "\033[1;31m¡Compartir el conocimiento es una accion de seres inteligentes!\033[0m"
+sleep 5
+echo "Empezamos..."
 sleep 1
 if [ -n "`which apt-get`" ]; then apt-get -y install build-essential patchutils\
  libproc-processtable-perl linux-headers-$(uname -r) git;
